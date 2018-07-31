@@ -86,8 +86,10 @@ en:
       notacc: "New user?"
       signupnow: "Sign up now!"
       remember_me: "Remember me on this computer"
+      forgot_password: "forgot password" 
     create:
       invalid_e_p : "Invalid email/password combination"
+
   
     
   sessions_controller:
@@ -103,3 +105,16 @@ en:
     edit:
           success: "Account activated!"
           danger: "Invalid activation link"
+  
+  password_resets:
+    create:
+      email_send: "Email sent with password reset instructions"
+      email_not_found: "Email address not found" 
+    update:
+      reset_success: "Password has been reset."
+      not_emty: "can't be empty"
+
+  password_resets_helper:
+    create:
+      info: "Email sent with password reset instructions"
+      danger: "Email address not found"
