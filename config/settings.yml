@@ -1,0 +1,10 @@
+railstutorial: "http://www.railstutorial.org/"
+michaelhartl: "http://www.michaelhartl.com/"
+railsbook: "http://www.railstutorial.org/book"
+railssc: "http://screencasts.railstutorial.org/"
+rubyonrails: "http://rubyonrails.org/"
+railscontact: "http://www.railstutorial.org/contact"
+email_regex: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+railshelp: "http://www.railstutorial.org/help"
+gravatar: "https://secure.gravatar.com/avatar/#{gravatar_id}?s=#{size}"
+gravatar_email: "http://gravatar.com/emails"

@@ -1,0 +1,105 @@
+en:
+  layouts:
+    footer:
+      railstutorial: "Ruby on Rails Tutorial"
+      michaelhartl: "Michael Hartl"
+      the: "The"
+      by: "by"
+      news: "News"
+      buton_about: "About"
+      buton_contact: "Contact"
+    header:
+      button_link_home: "sample app"
+      button_home: "Home"
+      button_help:  "Help"
+      button_login: "Log in"
+      button_users: "Users"
+      account: "Account"
+      profile: "Profile"
+      settings: "Settings"
+      button_logout: "Log out"
+
+  static_pages:
+    about:
+      title: "About"
+      the: "The"
+      railstutorial: "Ruby on Rails Tutorial"
+      isa: "is a"
+      book: "book"
+      and: "and"
+      screencasts: "screencast series"
+      nextsc: "to teach web development with"
+      rubyonrails: "Ruby on Rails"
+      last: "This is the sample application for the tutorial."
+    contact:
+      title: "Contact"
+      contact: "Contact"
+      first: "Contact the Ruby on Rails Tutorial about the sample app at the"
+      contactpage: "contact page"
+    help:
+      title: "Help"
+      help: "Help"
+      firsthelp: "Get help on the Ruby on Rails Tutorial at the"
+      railshelp: "Rails Tutorial help section"
+      nexthelp: "To get help on this sample app, see the"
+      railstutorial: "Ruby on Rails Tutorial"
+      book: "book"
+    home:
+      welcome: "Welcome to the Sample App"
+      firstwel: "This is the home page for the"
+      railstutorial: "Ruby on Rails Tutorial"
+      lastwel: "sample application."
+      signupnow: "Sign up now!"
+
+  users:
+    new:
+      title: "Sign up"
+      signup: "Sign up"
+      name: "Name"
+      email: "Email"
+      pass: "Password"
+      repass: "Confirmation"
+      submit: "Create my account"
+    create:
+      flashwelcome: "Welcome to the Sample App!!!"
+      user_deleted: "User deleted"
+      letlogin: "Please log in."
+    update:
+      profile_updated: "Profile updated"
+    edit:
+      title: "Edit user"
+      savechanges: "Save changes"
+      change: "Change"
+      update_profile: "Update your profile"
+
+  shared:
+    error_messages:
+      theformcontains: "The form contains"
+
+  sessions:
+    new:
+      title: "Log in"
+      login: "Log in"
+      email: "Email"
+      pass: "Password"
+      submit: "submit"
+      notacc: "New user?"
+      signupnow: "Sign up now!"
+      remember_me: "Remember me on this computer"
+    create:
+      invalid_e_p : "Invalid email/password combination"
+  
+    
+  sessions_controller:
+    create:
+          message: "Account not activated."
+          message1: "Check your email for the activation link."
+      
+  users_controller:
+    create:
+          info: "Please check your email to activate your account."
+      
+  account_activations_controller:
+    edit:
+          success: "Account activated!"
+          danger: "Invalid activation link"

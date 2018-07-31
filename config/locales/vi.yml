@@ -1,0 +1,83 @@
+vi:
+  layouts:
+    footer:
+      railstutorial: "Ruby on Rails Tutorial"
+      michaelhartl: "Michael Hartl"
+      the: "Về"
+      by: "bởi"
+      news: "Tin tức"
+      buton_about: "Chúng tôi"
+      buton_contact: "Liên hệ"
+    header:
+      button_link_home: "sample app"
+      button_home: "Trang chủ"
+      button_help:  "Trợ giúp"
+      button_login: "Đăng nhập"
+
+  static_pages:
+    about:
+      title: "Chúng tôi"
+      the: "Về"
+      railstutorial: "Ruby on Rails Tutorial"
+      isa: "là một"
+      book: "quyển sách"
+      and: "và"
+      screencasts: "các series bài hướng dẫn "
+      nextsc: "để dạy phát triển web với"
+      rubyonrails: "Ruby on Rails"
+      last: "Đây là ứng dụng mẫu cho hướng dẫn."
+    contact:
+      title: "Liên hệ"
+      contact: "Liên hệ"
+      first: "Liên hệ Ruby on Rails Tutorial về ứng dụng mẫu tại"
+      contactpage: "trang liên hệ"
+    help:
+      title: "Trợ giúp"
+      help: "Trợ giúp"
+      firsthelp: "Nhận trợ giúp về Ruby on Rails Tutorial tại"
+      railshelp: "phần trợ giúp Rails Tutorial"
+      nexthelp: "Để được trợ giúp về ứng dụng mẫu này, hãy xem"
+      railstutorial: "Ruby on Rails Tutorial"
+      book: "này"
+    home:
+      welcome: "Chào mừng tới Sample App"
+      firstwel: "Đây là trang chủ cho"
+      railstutorial: "Ruby on Rails Tutorial"
+      lastwel: "ứng dụng mẫu."
+      signupnow: "Đăng ký ngay!"
+
+  users:
+    new:
+      title: "Đăng ký"
+      signup: "Đăng ký"
+      name: "Tên"
+      email: "Địa chỉ Email"
+      pass: "Mật khẩu"
+      repass: "Xác nhận mật khẩu"
+      submit: "Tạo tài khoản"
+    create:
+      flashwelcome: "Chào mừng tới Sample App!!!"
+      user_deleted: "Đã xóa người dùng"
+      letlogin: "Hãy đăng nhập."
+    update:
+      profile_updated: "Đã cập nhật"
+    edit:
+      title: "Sửa người dùng"
+      savechanges: "Lưu thay đổi"
+      change: "Thay đổi"
+
+  shared:
+    error_messages:
+      Theformcontains: "Biểu mẫu có chứa"
+
+  sessions:
+    new:
+      title: "Đăng nhập"
+      login: "Đăng nhập"
+      email: "Địa chỉ Email"
+      pass: "Mật khẩu"
+      submit: "Đăng nhập"
+      notacc: "Người dùng mới"
+      signupnow: "Đăng ký ngay!"
+    create:
+      invalid_e_p: "Địa chỉ email/mật khẩu không xác định"
