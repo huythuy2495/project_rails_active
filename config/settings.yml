@@ -8,3 +8,6 @@ email_regex: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 railshelp: "http://www.railstutorial.org/help"
 gravatar: "https://secure.gravatar.com/avatar/#{gravatar_id}?s=#{size}"
 gravatar_email: "http://gravatar.com/emails"
+image: 5
+size: 50
+time_expired: 2

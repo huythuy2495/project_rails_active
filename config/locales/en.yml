@@ -127,3 +127,9 @@ en:
     create:
       info: "Email sent with password reset instructions"
       danger: "Email address not found"
+  
+  microposts:
+    create:
+      success: "Micropost created!"
+    destroy:
+      success: "Micropost deleted"
