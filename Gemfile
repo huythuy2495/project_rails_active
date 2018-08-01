@@ -20,6 +20,8 @@ gem "turbolinks", "~> 5"
 gem "jbuilder", "~> 2.5"
 gem "bootsnap", ">= 1.1.0", require: false
 gem "mysql2", "~> 0.4.4"
+gem 'carrierwave',             '1.2.2'
+gem 'mini_magick',             '4.7.0'
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
 end
@@ -43,6 +45,7 @@ end
 
 group :production do
   gem "pg", "0.18.4"
+  gem 'fog', '1.42'
 end
 
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
