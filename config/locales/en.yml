@@ -1,7 +1,7 @@
 en:
   layouts:
     footer:
-      railstutorial: "Ruby on Rails Tutorial"
+      railstutorial: "Chuong on Rails Tutorial"
       michaelhartl: "Michael Hartl"
       the: "The"
       by: "by"
@@ -50,7 +50,10 @@ en:
       railstutorial: "Ruby on Rails Tutorial"
       lastwel: "sample application."
       signupnow: "Sign up now!"
-
+  shared:
+    stats:
+      following: "following"
+      followers: "followers"
   users:
     new:
       title: "Sign up"
@@ -71,11 +74,24 @@ en:
       savechanges: "Save changes"
       change: "Change"
       update_profile: "Update your profile"
-
+    show_follow:
+      Microposts: "Microposts"
+    following:
+          title: "following"
+    followers: 
+          title: "followers"
+  users:
+    submit:
+      follow:
+        sumit: "Follow"
+      unfollow:
+        Unfollow: "Unfollow"
+    
+      
   shared:
     error_messages:
       theformcontains: "The form contains"
-
+  
   sessions:
     new:
       title: "Log in"
@@ -100,6 +116,7 @@ en:
   users_controller:
     create:
           info: "Please check your email to activate your account."
+  
       
   account_activations_controller:
     edit:

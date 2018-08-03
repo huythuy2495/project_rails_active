@@ -1,7 +1,9 @@
 class UsersController < ApplicationController
   before_action :logged_in_user, only: %i(index edit update destroy)
   before_action :correct_user, only: %i(edit update)
-  before_action :admin_user, only: :destroy
+  before_action :admin_user, only: %i(destroy)
+  before_action :find_user, except: %i(index new create)
+  before_action :valid_user, only: %i(edit update)
 
   def index
     @users = User.paginate(page: params[:page])
@@ -10,6 +12,8 @@ class UsersController < ApplicationController
   def show
     @user = User.find_by id: params[:id]
     @microposts = @user.microposts.paginate(page: params[:page])
+    @unfollow = current_user.active_relationships.find_by followed_id: @user.id
+    @follow = current_user.active_relationships.build
   end
 
   def new
@@ -47,6 +51,23 @@ class UsersController < ApplicationController
     redirect_to users_url
   end
 
+  def following
+    @title = t".title"
+    
+    @user  = User.find_by id: params[:id]
+    if @user.nil?
+      @users = @user.following.paginate(page: params[:page])
+      render "show_follow"
+    end
+  end
+
+  def followers
+    @title = t".title"
+    @user  = User.find_by id: params[:id]
+    @users = @user.followers.paginate(page: params[:page])
+    render "show_follow"
+  end
+
   private
     def user_params
       params.require(:user).permit :name, :email, :password,
@@ -61,5 +82,16 @@ class UsersController < ApplicationController
 
     def admin_user
       redirect_to(root_url) unless current_user.admin?
+    end
+
+    def find_user
+      @user = User.find_by id: params[:id]
+      if @user.nil?
+        redirect_to root_path
+      end
+    end
+
+    def valid_user
+      redirect_to root_url unless @user.current_user? @current_user
     end
 end

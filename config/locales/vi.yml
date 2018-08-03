@@ -1,7 +1,7 @@
 vi:
   layouts:
     footer:
-      railstutorial: "Ruby on Rails Tutorial"
+      railstutorial: "Ruby on Rails Tutorial" 
       michaelhartl: "Michael Hartl"
       the: "Về"
       by: "bởi"
@@ -18,7 +18,7 @@ vi:
     about:
       title: "Chúng tôi"
       the: "Về"
-      railstutorial: "Ruby on Rails Tutorial"
+      railstutorial: "Chương Ruby on Rails "
       isa: "là một"
       book: "quyển sách"
       and: "và"

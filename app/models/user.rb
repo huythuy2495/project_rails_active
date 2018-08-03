@@ -1,5 +1,11 @@
 class User < ApplicationRecord
   has_many :microposts, dependent: :destroy
+  has_many :active_relationships, class_name: Relationship.name,
+    foreign_key: "follower_id", dependent: :destroy
+  has_many :passive_relationships, class_name: Relationship.name,
+    foreign_key: "followed_id", dependent: :destroy
+  has_many :following, through: :active_relationships, source: :followed
+  has_many :followers, through: :passive_relationships, source: :follower
   attr_accessor :remember_token, :activation_token, :reset_token
   before_save   :downcase_email
   before_create :create_activation_digest
@@ -17,7 +23,6 @@ class User < ApplicationRecord
     BCrypt::Password.create(string, cost: cost)
   end
   
-
   def User.new_token
     SecureRandom.urlsafe_base64
   end
@@ -55,7 +60,6 @@ class User < ApplicationRecord
     update_attributes reset_digest: User.digest(reset_token), reset_sent_at:Time.zone.now
   end
 
-  
   def send_password_reset_email
     UserMailer.password_reset(self).deliver_now
   end
@@ -68,6 +72,18 @@ class User < ApplicationRecord
     microposts
   end
 
+  def follow other_user
+    following << other_user
+  end
+
+  def unfollow other_user
+    following.delete(other_user)
+  end
+
+  #trả về true nếu use hiện tại đang following use khác
+  def following? other_user
+    following.include?(other_user)
+  end
 
 private
 
